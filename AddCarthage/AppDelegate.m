@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "DetailViewController.h"
 #import <TestingCarthageFramework/Sum.h>
+#import <TestingCarthageFramework/TestingCarthage.h>
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -27,6 +28,11 @@
     Sum *a = [[Sum alloc] init];
     int result = [a sumX:0 toZ:0];
     NSLog(@"%@", [NSString stringWithFormat:@"%d", result]);
+
+    TestingCarthage *tC = [[TestingCarthage alloc] init];
+    int result2 = [tC sumX:0 toY:0];
+    NSLog(@"%@", [NSString stringWithFormat:@"%d", result2]);
+
     return YES;
 }
 
